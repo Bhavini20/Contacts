@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background: linear-gradient(rgba(129, 127, 127, 0.6), rgba(201, 184, 184, 0.4)), url('https://simility.com/wp-content/themes/simility/assets/img/contact-us-banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #bbd9df, 0 0 40px #b3d1d8, 0 0 50px #9ec2c9, 0 0 60px #4697a5, 0 0 70px #4697a5;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #e6d5dd, 0 0 40px #9c8c94, 0 0 50px #cadadd, 0 0 60px #cadadd, 0 0 70px #cadadd, 0 0 80px #cadadd;
+    }
+  
+}
+#success_message{ display: none;}
+
+.text {
+    background-color: white;
+    color: black;
+    font-size: 25vw; 
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 2px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+  }
+
+footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+       /* background-color: rgb(233, 236, 248);*/
+        color: white;
+        text-align: center;
+    /*background-color: black;*/
+    color: rgb(48, 46, 43);
+    bottom: 0;
+}
+
+@media (min-width:765px){
+
+    footer{
+        position: fixed;
+        bottom:0;
+        width:100%
+    }
+
+}
+
+
+
+
