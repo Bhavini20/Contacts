@@ -22,29 +22,43 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+               <!-- <li class="nav-item">
                   <a class="nav-link" href="index.html" style="color : rgb(216, 228, 230);"><b>HOME</b></a>
-                </li>
+                </li> -->
                 <li class="nav-item">
-                  <a class="nav-link" href="customer" style="color : rgb(207, 222, 224);"><b>VIEW CONTACTS</b></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="addcontact.html" style="color : rgb(220, 231, 233);"><b>ADD CONTACT</b></a>
+                  <button type="button" class="btn btn-primary button" ><a class="nav-link" href="addcontact.html" style="color : rgb(48, 66, 230);"><b>ADD CONTACT</b></a></button>
                 </li>
             </div>
       </nav>
 
     <div class="container-fluid">
         <div class="row intro">
-            <div class="col-sm-12 col-md-12 col-xs-12" style="margin-top: 3rem;">
+            <div class="col-sm-12 col-md-12 col-xs-12" style="margin-top: 0.0rem;">
                 <div class="text-center" >
                   <!---  <h2 style="color: black; font-size: 3rem"><b>Welcome to</b></h2> -->
                     <h1 class="glow" style="color: rgb(74, 172, 185); font-size:3rem; font-family:cursive;"><b>CONTACTS</b></h1>
                 </div>
-                <div class="text-center" >
-                    <!---  <h2 style="color: black; font-size: 3rem"><b>Welcome to</b></h2> -->
-                      <h1 style="color: white; font-size:1.5rem; font-family:cursive; margin-top:9rem"><b>Contact anyone you want whenever you want!</b></h1>
-                  </div>
+                <div class="table-responsive-sm text-center" style="margin-top: 4rem; max-width: 75%;">
+                  <table class="table table-hover table-striped table-condensed table-bordered center">
+                      <thead style="color : black;">
+                          <tr>
+                              <th class="text-center">S.No.</th>
+                              <th class="text-center">Sender</th>
+                              <th class="text-center">Receiver</th>
+                              <th class="text-center">Amount</th>
+                              <th class="text-center">Date & Time</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr style="color : black;">
+                          <td class="py-2"><?php echo $rows['sno']; ?></td>
+                          <td class="py-2"><?php echo $rows['sender']; ?></td>
+                          <td class="py-2"><?php echo $rows['receiver']; ?></td>
+                          <td class="py-2"><?php echo $rows['balance']; ?> </td>
+                          <td class="py-2"><?php echo $rows['datetime']; ?> </td>
+                      </tbody>
+                  </table>
+                </div>
             </div>
         </div>
     </div>

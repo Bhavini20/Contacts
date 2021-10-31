@@ -5,9 +5,22 @@
     padding: 0;
 }
 
+.btn{
+  background-color: #c2b0b9;
+  color : blue;
+}
+
+.button {
+  transition-duration: 0.2s;
+}
+
+.button:hover {
+  background-color: rgb(90, 162, 184); 
+  color: white;
+}
 body{
     box-sizing: border-box;
-    background: linear-gradient(rgba(129, 127, 127, 0.6), rgba(201, 184, 184, 0.4)), url('https://simility.com/wp-content/themes/simility/assets/img/contact-us-banner.jpg');
+    background: linear-gradient(rgba(37, 35, 35, 0.6), rgba(90, 84, 84, 0.4)), url('https://simility.com/wp-content/themes/simility/assets/img/contact-us-banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
