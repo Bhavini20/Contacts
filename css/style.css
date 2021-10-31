@@ -20,7 +20,7 @@
 }
 body{
     box-sizing: border-box;
-    background: linear-gradient(rgba(37, 35, 35, 0.6), rgba(90, 84, 84, 0.4)), url('https://simility.com/wp-content/themes/simility/assets/img/contact-us-banner.jpg');
+    background: linear-gradient(rgba(31, 29, 29, 0.6), rgba(15, 13, 13, 0.4)), url('https://images.unsplash.com/photo-1555505019-8c3f1c4aba5f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8d29vZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;

@@ -29,24 +29,26 @@
                   <button type="button" class="btn btn-primary button" ><a class="nav-link" href="addcontact.html" style="color : rgb(48, 66, 230);"><b>ADD CONTACT</b></a></button>
                 </li>
             </div>
-      </nav>
+    </nav>
 
-    <div class="container-fluid">
-        <div class="row intro">
+    <div class="container">
+        <div >
             <div class="col-sm-12 col-md-12 col-xs-12" style="margin-top: 0.0rem;">
                 <div class="text-center" >
                   <!---  <h2 style="color: black; font-size: 3rem"><b>Welcome to</b></h2> -->
-                    <h1 class="glow" style="color: rgb(74, 172, 185); font-size:3rem; font-family:cursive;"><b>CONTACTS</b></h1>
+                    <h1 class="glow" style="color: rgb(69, 82, 83); font-size:3rem; font-family:cursive;"><b>CONTACTS</b></h1>
                 </div>
-                <div class="table-responsive-sm text-center" style="margin-top: 4rem; max-width: 75%;">
-                  <table class="table table-hover table-striped table-condensed table-bordered center">
-                      <thead style="color : black;">
+            </div>
+        </div>
+        <div class="table-responsive text-center" style="margin-top: 4rem;">
+                  <table bordercolor="black" class="table table-hover table-striped table-condensed table-bordered center">
+                      <thead style="color : white;">
                           <tr>
                               <th class="text-center">S.No.</th>
-                              <th class="text-center">Sender</th>
-                              <th class="text-center">Receiver</th>
-                              <th class="text-center">Amount</th>
-                              <th class="text-center">Date & Time</th>
+                              <th class="text-center">Name</th>
+                              <th class="text-center">Email</th>
+                              <th class="text-center">Phone Number</th>
+                              <th class="text-center">Action</th>
                           </tr>
                       </thead>
                       <tbody>
@@ -58,8 +60,6 @@
                           <td class="py-2"><?php echo $rows['datetime']; ?> </td>
                       </tbody>
                   </table>
-                </div>
-            </div>
         </div>
     </div>
     <footer class="text-center mt-2 py-1  ">

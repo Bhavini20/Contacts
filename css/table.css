@@ -9,6 +9,10 @@ h2{
 }
 table{
 	letter-spacing: 1.2px;
+	margin-left: 20rem;
+	align-self: center;
+	padding-left: 4rem;
+	padding-right: 4rem;
 }
 td{
 	text-align: center;
