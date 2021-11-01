@@ -5,19 +5,7 @@
     padding: 0;
 }
 
-.btnn{
-  background-color: #c2b0b9;
-  color : blue;
-}
 
-.button {
-  transition-duration: 0.2s;
-}
-
-.button:hover {
-  background-color: rgb(90, 162, 184); 
-  color: white;
-}
 body{
     box-sizing: border-box;
     background: linear-gradient(rgba(31, 29, 29, 0.6), rgba(15, 13, 13, 0.4)), url('https://images.unsplash.com/photo-1555505019-8c3f1c4aba5f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8d29vZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
@@ -27,11 +15,11 @@ body{
     min-width: 100vw;
 }
 
-
-.but{
-  margin-right: 2rem;
-  border-radius: 1rem;
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
 }
+
 
 .glow {
     font-size: 80px;

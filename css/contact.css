@@ -32,6 +32,10 @@ body{
     line-height: 100px;
 }
 
+.up{
+    color:white
+}
+
 .registration-form .item{
 	border-radius: 20px;
     margin-bottom: 25px;

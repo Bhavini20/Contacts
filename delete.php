@@ -8,7 +8,8 @@
      $result= mysqli_query($conn,$sql);
 
      if($result){
-         echo "Deleted Successfully";
+         //echo "Deleted Successfully";
+         header('location:index.php');
      }
      else{
         die(mysqli_error($conn));

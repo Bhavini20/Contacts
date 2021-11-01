@@ -10,12 +10,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
 
     <title>Contacts App</title>
 </head>
 
 <body>
+    <!--navbar-->
     <nav class="navbar navbar-expand-md navbar-light ">
         <a class="navbar-brand logo" href="index.php" ><img src="./Images/Logo.jpg" alt="" style="padding-left: 3rem;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -24,7 +26,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <button type="button" class="btn btn-primary" ><a class="nav-link" href="addcontact.php" style="color : rgb(48, 66, 230);"><b>ADD CONTACT</b></a></button>
+                  <button type="button" class="btn btn-primary" ><a class="nav-link text-light" href="addcontact.php"><b>ADD CONTACT</b></a></button>
                 </li>
             </div>
     </nav>
@@ -37,6 +39,7 @@
                 </div>
             </div>
         </div>
+        <!--table-->
         <div class="table-responsive text-center" style="margin-top: 4rem;">
                   <table bordercolor="black" class="table table-hover table-striped table-condensed table-bordered center">
                       <thead style="color : white;">
@@ -62,8 +65,8 @@
                           <td class="py-2"><?php echo $rows['email']; ?></td>
                           <td class="py-2"><?php echo $rows['phone']; ?> </td>
                           <td>
-                            <button class="btn btn-primary"><a href="update.php" class="text-light">EDIT</a></button>
-                            <button class="btn btn-danger"><a  class="text-light" href="delete.php?deleteid= <?php echo $rows['id']; ?>">DELETE</a></button>
+                            <button class="btn btn-primary" style="margin-right: 1rem"><a class="text-light" style="text-decoration:none;" href="update.php?updateid= <?php echo $rows['id']; ?>">EDIT</a></button>
+                            <button class="btn btn-danger"><a  class="text-light" style="text-decoration:none;" href="delete.php?deleteid= <?php echo $rows['id']; ?>">DELETE</a></button>
                           </td>
 
                           <?php
@@ -74,6 +77,7 @@
                   </table>
         </div>
     </div>
+    <!--footer-->
     <footer class="text-center mt-2 py-1" style="color:white;">
         <p>&copy 2021 Made with &hearts; by <b>Bhavini Singh</b></p>
     </footer>
