@@ -61,7 +61,7 @@
                         ?>
                           <tr style="color : white;">
                           <td class="py-2"><b><?php echo $rows['id']; ?></b></td>
-                          <td class="py-2"><?php echo $rows['name']; ?></td>
+                          <td class="py-2"><?php echo $rows['fname']." ".$rows['lname']; ?></td>
                           <td class="py-2"><?php echo $rows['email']; ?></td>
                           <td class="py-2"><?php echo $rows['phone']; ?> </td>
                           <td>

@@ -38,12 +38,12 @@ CREATE TABLE `crud` (
 -- Dumping data for table `crud`
 --
 
-INSERT INTO `crud` (`id`, `name`, `email`, `phone`) VALUES
-(1, 'Bhavini Singh', 'bhavini.singh2019@vitstudent.ac.in', '08529732063'),
-(4, 'Adi', 'Adi@gmail.com', '897645567789'),
-(5, 'Bhavini Singh', 'bhavini.singh2@vitstudent.ac.in', '08529732063'),
-(9, 'Niel Sharma', 'neil@gmail.com', '8765897654'),
-(13, 'Bhavini Singh', 'bhavini.singh2019@vitstudent.ac.in', '8978474567');
+ /*INSERT INTO `crud` (`id`, `name`, `email`, `phone`) VALUES
+(1, 'Aditya', 'aditya@gmail.com', '1234567890'),
+(2, 'Test', 'test@gmail.com', '4567387654');
+--(5, 'Bhavini Singh', 'bhavini.singh2@vitstudent.ac.in', '08529732063'),
+--(9, 'Niel Sharma', 'neil@gmail.com', '8765897654'),
+--(13, 'Bhavini Singh', 'bhavini.singh2019@vitstudent.ac.in', '8978474567'); */
 
 --
 -- Indexes for dumped tables
@@ -63,7 +63,7 @@ ALTER TABLE `crud`
 -- AUTO_INCREMENT for table `crud`
 --
 ALTER TABLE `crud`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -8,11 +8,12 @@
 
 
     if(isset($_POST['submit'])){
-       $name = $_POST['name'];
+       $fname = $_POST['fname'];
+       $lname = $_POST['lname'];
        $email = $_POST['email'];
        $phone = $_POST['phone'];
  
-       $sql = "update `crud` set id = '$id', name='$name', email='$email', phone='$phone' where id=$id";
+       $sql = "update `crud` set id = '$id', fname='$fname', lname='$lname', email='$email', phone='$phone' where id=$id";
 
        $result = mysqli_query($conn,$sql);
 
@@ -56,7 +57,10 @@
                 <span><i class="icon icon-user"></i></span>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control item" id="name" name="name" value="<?php echo $row['name']; ?>" autocomplete="off">
+                <input type="text" class="form-control item" id="fname" name="fname" value="<?php echo $row['fname']; ?>" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="lname" name="lname" value="<?php echo $row['lname']; ?>" autocomplete="off">
             </div>
             <div class="form-group">
                 <input type="text" class="form-control item" id="email" name="email" value="<?php echo $row['email']; ?>" placeholder="Email" autocomplete="off">
