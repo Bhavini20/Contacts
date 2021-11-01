@@ -23,11 +23,8 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="navbar-nav ml-auto">
-               <!-- <li class="nav-item">
-                  <a class="nav-link" href="index.html" style="color : rgb(216, 228, 230);"><b>HOME</b></a>
-                </li> -->
                 <li class="nav-item">
-                  <button type="button" class="btn btn-primary button" ><a class="nav-link" href="addcontact.php" style="color : rgb(48, 66, 230);"><b>ADD CONTACT</b></a></button>
+                  <button type="button" class="btn btn-primary" ><a class="nav-link" href="addcontact.php" style="color : rgb(48, 66, 230);"><b>ADD CONTACT</b></a></button>
                 </li>
             </div>
     </nav>
@@ -36,7 +33,6 @@
         <div >
             <div class="col-sm-12 col-md-12 col-xs-12" style="margin-top: 0.0rem;">
                 <div class="text-center" >
-                  <!---  <h2 style="color: black; font-size: 3rem"><b>Welcome to</b></h2> -->
                     <h1 class="glow" style="color: rgb(69, 82, 83); font-size:3rem; font-family:cursive;"><b>CONTACTS</b></h1>
                 </div>
             </div>
@@ -61,14 +57,19 @@
                       {
                         ?>
                           <tr style="color : white;">
-                          <td class="py-2"><?php echo $rows['id']; ?></td>
+                          <td class="py-2"><b><?php echo $rows['id']; ?></b></td>
                           <td class="py-2"><?php echo $rows['name']; ?></td>
                           <td class="py-2"><?php echo $rows['email']; ?></td>
                           <td class="py-2"><?php echo $rows['phone']; ?> </td>
-                          <td class="py-2"><?php echo $rows['datetime']; ?> </td>
+                          <td>
+                            <button class="btn btn-primary"><a href="update.php" class="text-light">EDIT</a></button>
+                            <button class="btn btn-danger"><a  class="text-light" href="delete.php?deleteid= <?php echo $rows['id']; ?>">DELETE</a></button>
+                          </td>
+
                           <?php
                             }
                           ?>  
+
                       </tbody>
                   </table>
         </div>

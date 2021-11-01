@@ -9,7 +9,10 @@
 
        $result = mysqli_query($conn,$sql);
 
-       if(! $result){
+       if( $result){
+           header('location:index.php');
+       }
+           else{
         die(mysqli_error($conn));
        }
     }

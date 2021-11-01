@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-.btn{
+.btnn{
   background-color: #c2b0b9;
   color : blue;
 }
@@ -27,6 +27,11 @@ body{
     min-width: 100vw;
 }
 
+
+.but{
+  margin-right: 2rem;
+  border-radius: 1rem;
+}
 
 .glow {
     font-size: 80px;
