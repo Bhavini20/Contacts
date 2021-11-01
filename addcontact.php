@@ -1,3 +1,20 @@
+<?php
+    include 'config.php'; 
+    if(isset($_POST['submit'])){
+       $name = $_POST['name'];
+       $email = $_POST['email'];
+       $phone = $_POST['phone'];
+
+       $sql = "insert into `crud` (name,email,phone) values('$name','$email','$phone')";
+
+       $result = mysqli_query($conn,$sql);
+
+       if(! $result){
+        die(mysqli_error($conn));
+       }
+    }
+?>
+
 <!Doctype html>
 <html lang="en">
 
@@ -20,40 +37,25 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-light ">
         <a class="navbar-brand logo" href="index.php" ><img src="./Images/Logo.jpg" alt="" style="padding-left: 3rem;"></a>
-       <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon navbar-light"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html" style="color : rgb(216, 228, 230);"><b>HOME</b></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="customer.php" style="color : rgb(207, 222, 224);"><b>VIEW CONTACTS</b></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="transaction.php" style="color : rgb(220, 231, 233);"><b>ADD CONTACT</b></a>
-                </li>
-            </div> -->
       </nav>
 
       <div class="registration-form">
-        <form>
+        <form method="post">
             <div class="form-icon">
                 <span><i class="icon icon-user"></i></span>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control item" id="name" placeholder="Name">
+                <input type="text" class="form-control item" id="name" name="name" placeholder="Name" autocomplete="off">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control item" id="email" placeholder="Email">
+                <input type="text" class="form-control item" id="email" name="email" placeholder="Email" autocomplete="off">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control item" id="phone-number" placeholder="Phone Number">
+                <input type="text" class="form-control item" id="phone" name="phone" placeholder="Phone Number" autocomplete="off">
             </div>
            
             <div class="form-group">
-                <button type="button" class="btn btn-block create-account">Add Contact</button>
+                <button type="submit" name="submit" class="btn btn-block create-account">Add Contact</button>
             </div>
         </form>
        
@@ -62,7 +64,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
-    <footer class="text-center mt-2 py-1  ">
+    <footer class="text-center mt-2 py-1" style="color: white;">
         <p>&copy 2021 Made with &hearts; by <b>Bhavini Singh</b></p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

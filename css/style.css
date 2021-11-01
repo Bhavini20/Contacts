@@ -63,16 +63,16 @@ body{
   }
 
 footer{
-        position: fixed;
+       /* position: fixed;*/
         left: 0;
-        bottom: 0;
+       /* bottom: 0;*/
         width: 100%;
        /* background-color: rgb(233, 236, 248);*/
         color: white;
         text-align: center;
     /*background-color: black;*/
-    color: rgb(48, 46, 43);
-    bottom: 0;
+    color: rgb(255, 254, 253);
+    /*bottom: 0;*/
 }
 
 @media (min-width:765px){

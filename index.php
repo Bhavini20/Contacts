@@ -1,3 +1,4 @@
+
 <!Doctype html>
 <html lang="en">
 
@@ -26,7 +27,7 @@
                   <a class="nav-link" href="index.html" style="color : rgb(216, 228, 230);"><b>HOME</b></a>
                 </li> -->
                 <li class="nav-item">
-                  <button type="button" class="btn btn-primary button" ><a class="nav-link" href="addcontact.html" style="color : rgb(48, 66, 230);"><b>ADD CONTACT</b></a></button>
+                  <button type="button" class="btn btn-primary button" ><a class="nav-link" href="addcontact.php" style="color : rgb(48, 66, 230);"><b>ADD CONTACT</b></a></button>
                 </li>
             </div>
     </nav>
@@ -52,17 +53,27 @@
                           </tr>
                       </thead>
                       <tbody>
-                          <tr style="color : black;">
-                          <td class="py-2"><?php echo $rows['sno']; ?></td>
-                          <td class="py-2"><?php echo $rows['sender']; ?></td>
-                          <td class="py-2"><?php echo $rows['receiver']; ?></td>
-                          <td class="py-2"><?php echo $rows['balance']; ?> </td>
+                      <?php
+                      include 'config.php';
+                      $sql ="select * from crud";
+                      $query =mysqli_query($conn, $sql);
+                      while($rows = mysqli_fetch_assoc($query))
+                      {
+                        ?>
+                          <tr style="color : white;">
+                          <td class="py-2"><?php echo $rows['id']; ?></td>
+                          <td class="py-2"><?php echo $rows['name']; ?></td>
+                          <td class="py-2"><?php echo $rows['email']; ?></td>
+                          <td class="py-2"><?php echo $rows['phone']; ?> </td>
                           <td class="py-2"><?php echo $rows['datetime']; ?> </td>
+                          <?php
+                            }
+                          ?>  
                       </tbody>
                   </table>
         </div>
     </div>
-    <footer class="text-center mt-2 py-1  ">
+    <footer class="text-center mt-2 py-1" style="color:white;">
         <p>&copy 2021 Made with &hearts; by <b>Bhavini Singh</b></p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
