@@ -48,17 +48,17 @@
                 <span><i class="icon icon-user"></i></span>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control item" id="name" name="name" placeholder="Name" autocomplete="off">
+                <input type="text" class="form-control item" id="name" name="name" placeholder="Name" required autocomplete="off">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control item" id="email" name="email" placeholder="Email" autocomplete="off">
+                <input type="text" class="form-control item" id="email" name="email" placeholder="Email" required autocomplete="off">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control item" id="phone" name="phone" placeholder="Phone Number" autocomplete="off">
+                <input type="text" class="form-control item" id="phone" name="phone" placeholder="Phone Number" autocomplete="off" required onchange="return val()" minlength="10" pattern="[0-9]{10}">
             </div>
            
             <div class="form-group">
-                <button type="submit" name="submit" class="btn btn-block create-account">Add Contact</button>
+                <button type="submit" name="submit" class="btn btn-block create-account" onclick="validate()">Add Contact</button>
             </div>
         </form>
        
@@ -67,7 +67,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
-    <footer class="text-center mt-2 py-1" style="color: white;">
+    <footer class="text-center " style="color: white;">
         <p>&copy 2021 Made with &hearts; by <b>Bhavini Singh</b></p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
