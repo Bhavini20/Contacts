@@ -24,11 +24,11 @@ Fork this repo to your GitHub account
 ### 2. Clone repo
 Clone the forked repo to your local machine
 ```bash
-git clone https://github.com/<YOUR-GITHUB-USERNAME>/Contact_App.git
+git clone https://github.com/<YOUR-GITHUB-USERNAME>/Contact App.git
 ```
 Navigate to project directory
 ```bash
-cd Contact_App
+cd Contact App
 ```
 
 Your application setup is successfully completed!
